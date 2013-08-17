@@ -12,7 +12,7 @@
 
 body
 {
-	background: lightgrey;
+	background: lightgrey ;
 	color: black;
 	font-size: 16px;
 	font-family: 'Headland One', serif;
@@ -66,17 +66,22 @@ footer #cont_social #google_plus:after
 	content: "\e007";
 }
 
-
+/*lorent ipsum*/
 
 header 
 {
+	display: block;
 	height: 43px;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1232;
 }
 
 header nav
 {
-	background: darkgrey;
+	background: #434343;
 	top: 0;
 }
 
@@ -94,27 +99,33 @@ header nav ul li
 }
 header nav ul li a 
 {
-	color: black;
+	color: lightgrey;
 	display: block;
 	padding: 0.5em 1em;
+	text-align: center;
 	text-decoration: none;
 }
-header nav ul li a:hover{
-	background: #7A7D7F;
-	-webkit-transition-property: width, height, background-color;
-	-webkit-transition-duration: 0.1s, 0.1s, 0.1s;
-	-webkit-transition-timing-function: linear, linear;
-	-webkit-transition-delay:0s ,0.1s, 0.1s;
-}
-
 nav ul #home
 {
 	float: left;
 	text-align: center;
 	width: 5em;
+	position: relative;
 }
-
-
+nav ul #home figcaption
+{
+	color: lightgrey;
+	float: right;
+	height: 100%;
+	line-height: 225%;
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+nav ul #home figcaption:after
+{
+	content: "\e002";
+}
 nav ul #lupa
 {
 	float: right;	
@@ -126,7 +137,8 @@ nav #lupa a:after,
 nav #home a:after,
 footer #cont_social #twitter:after,
 footer #cont_social #google_plus:after,
-footer #cont_social #facebook:after
+footer #cont_social #facebook:after,
+nav ul #home figcaption:after
 {
 	font-family: "icomoon";
 }
