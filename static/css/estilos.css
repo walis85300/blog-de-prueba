@@ -12,7 +12,7 @@
 
 body
 {
-	background: lightgrey ;
+	background: lightgrey url("http://d36xtkk24g8jdx.cloudfront.net/bluebar/411ae8f/images/shared/noise-2.png") ;
 	color: black;
 	font-size: 16px;
 	font-family: 'Headland One', serif;
@@ -167,7 +167,8 @@ nav #lupa a:after
 
 #contenido .item
 {
-	background: #C7C2BE;
+	background: #C7C2BE url("http://d36xtkk24g8jdx.cloudfront.net/bluebar/411ae8f/images/shared/noise-1.png");
+	box-shadow: 0px 3px 5px rgba(8,8,8,.5);
 	border-radius: 4px;
 	margin: 0 0 3em 0;
 	padding: 1em;
@@ -199,7 +200,7 @@ nav #lupa a:after
 
 #menuMoviles
 {
-	background: grey;
+	background: grey url("http://d36xtkk24g8jdx.cloudfront.net/bluebar/411ae8f/images/shared/noise-2.png");
 	display: none;
 	height: 100%;
 	left: 0;
@@ -220,7 +221,7 @@ nav #lupa a:after
 
 #menuMoviles ul li
 {
-	background: rgba(235,232,232,.6) ;
+	background: rgba(199,194,190,.9) url("http://d36xtkk24g8jdx.cloudfront.net/bluebar/411ae8f/images/shared/noise-1.png");
 	box-shadow: 0px 4px 25px 0px rgba(8,8,8,.5);
 	width: 95%;
 	height: 100%;
@@ -228,6 +229,7 @@ nav #lupa a:after
 	padding: 1em 0 1em 0;
 	text-align: center;
 }
+
 #menuMoviles #cerrar
 {
 	margin: 0 0 3em 2.5%;
