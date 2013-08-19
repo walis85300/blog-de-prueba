@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Inicio</title>
-	<link rel="stylesheet" href="static/css/normalize.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/normalize.css">
 	<link href='http://fonts.googleapis.com/css?family=Headland+One|Fauna+One' rel='stylesheet' type='text/css'></head>
-	<link rel="stylesheet" href="static/css/estilos.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/estilos.css">
 
 <body>
 	<header>
@@ -38,33 +38,8 @@
 		</ul>		
 	</div>
 	<section id="contenido">
-		<p id="pub_del_dia"><strong>Publicaciones del día: fecha</strong></p>
-		<article class="item">
-			<figure class="imagen_item">
-				<img src="imagenes/miramar.jpg">
-			</figure>
-			<h2 class="titulo_item">
-				 esto es una prueba para ver cuando
-				 un título es muy largo
-			</h2>
-			<p class="contenido_item">
-				Es un disco de tomates fritos bla bla bla bla bla bla bla bla bla bla bla bla
-				lbla bla blagneikvnkdlz
-			</p>
-		</article>
-		<article class="item">
-			<figure class="imagen_item">
-				<img src="imagenes/miramar.jpg">
-			</figure>
-			<h2 class="titulo_item">
-				 esto es una prueba para ver cuando
-				 un título es muy largo
-			</h2>
-			<p class="contenido_item">
-				Es un disco de tomates fritos bla bla bla bla bla bla bla bla bla bla bla bla
-				lbla bla blagneikvnkdlz
-			</p>
-		</article>
+		{% block contenido %}
+		{% endblock %}
 	</section>
 	<footer>
 		<div id="cont_social">
@@ -75,6 +50,6 @@
 		<p>Todos los Derechos Reservados -2013- ®</p>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="static/js/codigo.js"></script>
+	<script src="{{ STATIC_URL }}js/codigo.js"></script>
 </body>
 </html>
